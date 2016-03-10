@@ -8,7 +8,7 @@ package srm;
 import java.io.FileNotFoundException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import srm.Documentos.ProcessaDocumentos;
+import srm.Documentos.TProcessaDocumentos;
 import srm.Documentos.TDocumentos;
 import srm.Documentos.TTermo;
 
@@ -24,9 +24,9 @@ public class SRM {
     public static void main(String[] args) {
         // TODO code application logic here
         
-       ProcessaDocumentos pd;
+       TProcessaDocumentos pd;
         try {
-            pd = new ProcessaDocumentos();
+            pd = new TProcessaDocumentos();
             
             for(TDocumentos d: pd.getListaDocs()){
                 System.out.println("doc: " + d.getNomeDocumento());
